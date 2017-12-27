@@ -1,4 +1,4 @@
-
+[TOC]
 
 
 # 1 python虚拟环境
@@ -27,6 +27,13 @@ ll_env\Scripts\activate
 
 
 
+# 其他
+## 查看Django版本号：
+~~~python
+python -m django --version
+~~~
+>E:\MyCodes\python\pcc\MyProj>python -m django --version
+1.11.6
 
 
 
