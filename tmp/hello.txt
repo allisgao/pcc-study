@@ -1,0 +1,2 @@
+hello,world!
+my path is "E:\MyCodes\python\pcc\tmp\hello.txt"
