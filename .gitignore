@@ -9,3 +9,7 @@ Section1_Getting_started/Chapter10/10.*/*.txt
 Section1_Getting_started/Chapter10/10.*/10-8/*.txt
 *.json
 *tmp*
+
+# Django source code
+E:\MyCodes\python\pcc\Section2_Projects\Program3\pizza\Django-2.0.2
+E:\MyCodes\python\pcc\Section2_Projects\Program3\pizza\Django-2.0.2.tar.gz
