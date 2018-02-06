@@ -8,3 +8,4 @@ git使用规范.html
 Section1_Getting_started/Chapter10/10.*/*.txt
 Section1_Getting_started/Chapter10/10.*/10-8/*.txt
 *.json
+*tmp*
