@@ -14,5 +14,11 @@ urlpatterns = [
     path('topics/', views.topics, name='topics'),
 
     # details of special topics
-    path('topics/<int:topic_id>/', views.topic, name='topic')
+    path('topics/<int:topic_id>/', views.topic, name='topic'),
+
+    # new_topics, add new topics
+    path('new_topic/', views.new_topic, name='new_topic'),
+
+    # add new items
+    path('new_entry/<int:topic_id>', views.new_entry, name='new_entry'),
 ]
