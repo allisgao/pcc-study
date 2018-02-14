@@ -19,3 +19,6 @@ Section1_Getting_started/Chapter10/10.*/10-8/*.txt
 
 # virtual env
 ll_env/
+
+# backup files
+*.bak
