@@ -9,7 +9,8 @@ git使用规范.html
 # a/**/z matchs a/z, a/b/z, /a/b/c/z .etc.
 #Section1_Getting_started/Chapter10/10.*/*.txt
 #Section1_Getting_started/Chapter10/10.*/10-8/*.txt
-Section1_Getting_started/Chapter10/**/*.txt
+Section1_Getting_started/Chapter10/10.*/*.txt
+Section1_Getting_started/Chapter10/10.*/10-8/*.txt
 *.json
 *tmp*
 
