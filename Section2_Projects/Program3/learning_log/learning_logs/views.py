@@ -72,6 +72,9 @@ def edit_entry(request, entry_id):
     entry = Entry.objects.get(id=entry_id)
     topic = entry.topic
 
+    if topic.owner != request.user:
+        raise Http404
+
     if request.method != 'POST':
         # use presented entries to fill the form when the first time to ask
         form = EntryForm(instance=entry)
