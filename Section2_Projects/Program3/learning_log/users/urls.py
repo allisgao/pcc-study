@@ -12,6 +12,9 @@ urlpatterns = [
     # login page
     path('login/', login, {'template_name': 'users/login.html'}, name='login'),
 
+    # logout
+    path('logout/', views.logout_view, name='logout'),
+
 ]
 
 
