@@ -1,0 +1,8 @@
+dj-database-url==0.4.2
+dj-static==0.0.6
+django==2.0.2
+-e git+git@github.com:okgao/pcc-study.git@85ab596a12703b1ea59bb02f49ac093f0a1213a4#egg=django_bootstrap3&subdirectory=section2_projects\program3\learning_log\django-bootstrap3-master
+gunicorn==19.7.1
+pytz==2017.3
+static3==0.7.0
+psycopg2>=2.6.1
