@@ -136,3 +136,30 @@ LOGIN_URL = '/users/login/'
 BOOTSTRAP3 = {
     'include_jquery': True,
 }
+
+# Heroku settings
+# if os.getcwd() == '/app':
+cwd = os.getcwd()
+if cwd == '/app' or cwd[:4] == '/tmp':
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.config(default='postgres://localhost')
+    }
+
+    # let request.is_secure approve X-Forwarded-proto head
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO', 'https')
+
+    # support all host header
+    #  only allow heroku to host the project.
+    ALLOWED_HOSTS = ['*']
+    DEBUG = True
+
+    # static property setting
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    STATIC_ROOT = 'staticfiles'
+    STATICFILES_DIR = (
+        os.path.join(BASE_DIR, 'static'),
+    )
+
+    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
