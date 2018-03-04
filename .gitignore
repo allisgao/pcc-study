@@ -40,3 +40,6 @@ MyProj/
 
 # picture
 *.png
+
+# .svg files
+Section2_Projects/Program2/15.4/*.svg
