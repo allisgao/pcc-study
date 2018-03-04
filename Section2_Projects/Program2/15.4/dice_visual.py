@@ -14,7 +14,7 @@ for roll_number in range(1000):
 # analize the resultes
 frequencies = []
 max_result = die_1.number_sides + die_2.number_sides
-for value in range(1, max_result + 1):
+for value in range(2, max_result + 1):
     frequencey = results.count(value)
     frequencies.append(frequencey)
 
@@ -23,7 +23,7 @@ for value in range(1, max_result + 1):
 hist = pygal.Bar()
 
 hist.title = "Results of rolling 2 D6 1000 times."
-hist.x_labels = ['2', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+hist.x_labels = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 hist.x_title = "Result"
 hist.y_title = "Frequency of Result"
 
